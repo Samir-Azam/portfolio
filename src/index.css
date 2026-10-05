@@ -1,0 +1,20 @@
+@import "tailwindcss";
+:root{--bg:#070b14;--ink:#e6ecf7;--mute:#8a96ad;--line:#ffffff14;--acc:#7cc4ff}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{margin:0;color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;overflow-x:hidden;
+background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;background-attachment:fixed}
+.glass{background:#ffffff08;border:1px solid var(--line);backdrop-filter:blur(14px);border-radius:14px}
+.mono{font-family:'JetBrains Mono',monospace}
+.chip{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink);background:#0b1222cc;border:1px solid #7cc4ff55;border-radius:999px;padding:2px 9px;white-space:nowrap}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.flow{animation:flow 1.6s linear infinite;background:linear-gradient(var(--acc),transparent) 0 0/2px 200%}
+@keyframes flow{to{background-position:0 -200%}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.spot{position:relative;overflow:hidden}
+.spot::before{content:'';position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),#7cc4ff24,transparent 60%)}
+.spot:hover::before{opacity:1}
+@keyframes drift{50%{transform:translate(18px,26px)}}
+html,body{overflow-x:clip;max-width:100%;-webkit-text-size-adjust:100%}
+.chip{white-space:normal;text-align:center}
+@media (max-width:1023px){body{background-attachment:scroll}}
+@media (max-width:767px){.glass{backdrop-filter:blur(6px)}}

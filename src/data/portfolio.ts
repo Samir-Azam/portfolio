@@ -1,0 +1,70 @@
+export const portfolio = {
+  name: 'Samir Azam',
+  title: 'Software Engineer | Full-Stack Developer | C++ / Python Developer',
+  intro: 'Computer Engineering student with a strong foundation in C++, Python, Data Structures & Algorithms, and full-stack software development.',
+  location: 'Pune, Maharashtra',
+  email: 'azamsamir190@gmail.com',
+  resume: '/Samir_Azam_Resume.pdf', // place the PDF in /public with this name
+  social: { github: 'https://github.com/Samir-Azam', linkedin: 'https://www.linkedin.com/in/samir-azam/', leetcode: 'https://leetcode.com/u/SamirAzam/' },
+  about: 'Computer Engineering student at NBN Sinhgad Technical Institute Campus, Savitribai Phule Pune University (CGPA 9.18/10). I focus on software development: full-stack applications, backend development, C++ and Python, DSA, and AI-powered applications.',
+  about2: 'My work spans REST APIs, authentication, databases and responsive React frontends, backed by regular DSA problem solving on LeetCode and GeeksforGeeks.',
+  journey: ['C++', 'DSA', 'Backend', 'Full Stack', 'Software Engineering'],
+  skills: {
+    Languages: ['Java', 'C++', 'JavaScript', 'TypeScript', 'Python', 'SQL'],
+    'Core CS': ['Data Structures & Algorithms', 'Object-Oriented Programming', 'DBMS', 'Operating Systems', 'Computer Networks'],
+    Backend: ['Node.js', 'Express.js', 'REST APIs', 'JWT'],
+    Frontend: ['React.js', 'Tailwind CSS', 'HTML5', 'CSS3'],
+    Databases: ['MySQL', 'MongoDB'],
+    'Tools & Platforms': ['Git', 'GitHub', 'Postman', 'Cloudinary', 'Vercel', 'Render'],
+  } as Record<string, string[]>,
+  skillDomains: [
+    { name: 'Software Engineering', blurb: 'Strong CS fundamentals and problem solving in C++, Java and Python.', groups: [
+      { label: 'Languages', items: ['C++', 'Java', 'Python'] },
+      { label: 'Core CS', items: ['Data Structures & Algorithms', 'Object-Oriented Programming', 'Operating Systems', 'Computer Networks'] }] },
+    { name: 'Full-Stack', blurb: 'Web applications from React frontends to REST APIs.', groups: [
+      { label: 'Frontend', items: ['JavaScript', 'TypeScript', 'React.js', 'Tailwind CSS', 'HTML5', 'CSS3'] },
+      { label: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs', 'JWT'] }] },
+    { name: 'Data Science & AI', blurb: 'Python and SQL foundations, with experience building AI-powered applications.', groups: [
+      { label: 'Foundations', items: ['Python', 'SQL', 'DBMS', 'Data Analysis'] },
+      { label: 'Libraries', items: ['Pandas', 'NumPy', 'Matplotlib'] },
+      { label: 'AI & ML', items: ['Machine Learning', 'Generative AI', 'AI-powered applications', 'Oracle AI Foundations Associate'] }] },
+    { name: 'Databases', blurb: 'Relational and document databases.', groups: [
+      { label: 'Relational', items: ['MySQL', 'SQL'] }, { label: 'NoSQL', items: ['MongoDB'] }] },
+    { name: 'Tools & Platforms', blurb: 'Day-to-day tooling and deployment.', groups: [
+      { label: 'Workflow', items: ['Git', 'GitHub', 'Postman'] },
+      { label: 'Services & Hosting', items: ['Cloudinary', 'Vercel', 'Render'] }] },
+  ],
+  heroNodes: ['C++', 'Python', 'Java', 'JavaScript', 'TypeScript', 'React', 'Node.js', 'Express.js', 'MongoDB', 'MySQL', 'SQL', 'DSA', 'DBMS', 'OOP', 'REST APIs'],
+  projects: [
+    { id: 'motionly', title: 'Motionly', subtitle: 'Scalable Full-Stack Video Sharing Platform',
+      description: 'Scalable full-stack video sharing platform.',
+      tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Cloudinary'],
+      github: 'https://github.com/Samir-Azam/motionly', live: 'https://motionly-1.onrender.com/',
+      features: ['RESTful APIs for videos', 'Playlists', 'Comments', 'Subscriptions', 'Likes', 'JWT authentication', 'Protected routes', 'Cloudinary media upload pipeline', 'MongoDB schemas for user interactions'],
+      architecture: ['React', 'REST API', 'Node.js + Express', 'MongoDB', 'Cloudinary'] },
+    { id: 'syncspace', title: 'SyncSpace', subtitle: 'Real-Time Language Exchange Platform',
+      description: 'Real-time language exchange platform with chat and video calling.',
+      tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Stream SDK'],
+      github: 'https://github.com/Samir-Azam/syncspace', live: 'https://syncspace-vywz.onrender.com/',
+      features: ['JWT authentication', 'Authorization', 'Protected routes', 'Friend request workflow', 'User interaction system', 'Stream SDK', 'Real-time messaging', 'Video communication', 'RESTful APIs', 'Modular controller-service architecture'],
+      architecture: ['User', 'React', 'Node / Express', 'MongoDB + Stream SDK', 'Chat + Video'] },
+    { id: 'ai-resume-analyzer', title: 'AI Resume Analyzer', subtitle: 'AI-Powered ATS Resume Evaluation Platform',
+      description: 'AI-powered ATS resume evaluation platform.',
+      tech: ['React', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Puter.js'],
+      github: 'https://github.com/Samir-Azam/ai-resume-analyzer', live: 'https://ai-resume-analyzer-delta-ten.vercel.app/',
+      features: ['Resume upload', 'AI-driven scoring', 'ATS-style feedback', 'Keyword evaluation', 'Responsive React frontend', 'Reusable component architecture', 'Zustand state management'],
+      architecture: ['Resume', 'Upload', 'AI Analysis', 'ATS Evaluation', 'Score + Feedback'] },
+  ],
+  experience: [{ role: 'Web Development Intern', company: 'ApexPlanet Software Pvt. Ltd.', period: 'Oct 2025 — Nov 2025', mode: 'Virtual',
+    points: ['Developed responsive and reusable frontend modules using HTML, CSS, and JavaScript.', 'Built an e-commerce style application with product listing, filtering, pagination, and cart functionality.', 'Improved code readability and maintainability through structured component-based development.'] }],
+  education: [
+    { degree: 'B.E. in Computer Engineering', school: 'NBN Sinhgad Technical Institute Campus', extra: 'Savitribai Phule Pune University', score: 'CGPA: 9.18 / 10', period: 'Expected Graduation: 2027', courses: ['DSA', 'DBMS', 'Operating Systems', 'Computer Networks', 'OOP'] },
+    { degree: 'Senior Secondary', school: 'Upgraded +2 High School, Koderma', extra: '', score: '83%', period: '2020 — 2022', courses: [] as string[] },
+  ],
+  achievements: [
+    { big: '300+', label: 'DSA Problems Solved', sub: 'LeetCode + GeeksforGeeks' },
+    { big: 'Oracle Cloud Infrastructure 2025', label: 'AI Foundations Associate', sub: 'Oracle University' },
+    { big: 'Runner-up', label: 'National-Level TechFest', sub: 'Blind C Event' },
+  ],
+  mindset: ['Problem', 'Understand', 'Design', 'Implement', 'Test', 'Improve'],
+}
